@@ -17,6 +17,6 @@ public class WebDriverUtils {
 
     public static void waitForUrlToBe(WebDriver driver, String url) {
             new WebDriverWait(driver, Duration.ofSeconds(10))
-                    .until(ExpectedConditions.not(ExpectedConditions.urlToBe(url)));
+                    .until(ExpectedConditions.urlToBe(url));
     }
 }

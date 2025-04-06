@@ -12,9 +12,18 @@ public class LoginPage extends BasePage {
     private final By logoutButton = By.linkText("Log out");
     private final By loggedInMessage = By.cssSelector("h1");
     private final By errorMessage = By.id("error");
+    private final String loginPageUrl = baseUrl + "practice-test-login/";
 
     public LoginPage(WebDriver driver) {
         super(driver);
+    }
+
+    public void goTo() {
+        this.driver.get(loginPageUrl);
+    }
+
+    public String getLoginPageUrl() {
+        return loginPageUrl;
     }
 
     public void fillUsernameField(String text) {

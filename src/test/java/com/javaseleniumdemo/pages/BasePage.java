@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class BasePage {
     protected WebDriver driver;
+    protected String baseUrl = "https://practicetestautomation.com/";
 
     protected BasePage(WebDriver driver) {
         this.driver = driver;

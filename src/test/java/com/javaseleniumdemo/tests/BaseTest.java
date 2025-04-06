@@ -10,14 +10,12 @@ import org.testng.annotations.Parameters;
 public class BaseTest {
     protected WebDriver driver;
     protected String baseUrl = "https://practicetestautomation.com/";
-    protected String loginPageUrl = baseUrl + "practice-test-login/";
 
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)
     public void setup(@Optional("chrome") String browser) {
         driver = WebDriverFactory.createWebDriver(browser);
         driver.manage().window().maximize();
-        driver.get(loginPageUrl);
     }
 
     @AfterMethod(alwaysRun = true)
