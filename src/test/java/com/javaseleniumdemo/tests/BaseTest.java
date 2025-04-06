@@ -1,4 +1,4 @@
-package com.javaseleniumdemo.tests.login;
+package com.javaseleniumdemo.tests;
 
 import com.javaseleniumdemo.utils.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +9,8 @@ import org.testng.annotations.Parameters;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected String browser;
-    String baseUrl = "https://practicetestautomation.com/";
-    String loginPageUrl = baseUrl + "practice-test-login/";
+    protected String baseUrl = "https://practicetestautomation.com/";
+    protected String loginPageUrl = baseUrl + "practice-test-login/";
 
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)

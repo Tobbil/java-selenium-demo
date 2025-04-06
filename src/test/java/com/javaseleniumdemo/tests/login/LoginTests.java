@@ -2,6 +2,7 @@ package com.javaseleniumdemo.tests.login;
 
 import com.javaseleniumdemo.dataproviders.TestDataProviders;
 import com.javaseleniumdemo.pages.LoginPage;
+import com.javaseleniumdemo.tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
