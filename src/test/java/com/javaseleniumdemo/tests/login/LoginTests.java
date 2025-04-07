@@ -20,7 +20,7 @@ public class LoginTests extends BaseTest {
         loginPage.clickSubmitButton();
 
         loginPage.waitForUrlToBe(expectedUrlAfterLogin);
-        Assert.assertEquals(loginPage.getCurrentUrl(), expectedUrlAfterLogin);
+        Assert.assertEquals(driver.getCurrentUrl(), expectedUrlAfterLogin);
         Assert.assertEquals(loginPage.getLoggedInMessage(), expectedLoggedInMessage);
         Assert.assertTrue(loginPage.isLogoutButtonVisible());
     }
@@ -34,6 +34,6 @@ public class LoginTests extends BaseTest {
         loginPage.clickSubmitButton();
 
         Assert.assertEquals(loginPage.getLoginErrorMessage(), expectedErrorMessage);
-        Assert.assertEquals(loginPage.getCurrentUrl(), loginPage.getLoginPageUrl());
+        Assert.assertEquals(driver.getCurrentUrl(), loginPage.getLoginPageUrl());
     }
 }

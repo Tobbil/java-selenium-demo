@@ -55,8 +55,4 @@ public class LoginPage extends BasePage {
         WebElement loggedInMessage = WebDriverUtils.waitForVisibilityAndFind(this.driver, this.loggedInMessage);
         return loggedInMessage.getText();
     }
-
-    public String getCurrentUrl() {
-        return this.driver.getCurrentUrl();
-    }
 }
