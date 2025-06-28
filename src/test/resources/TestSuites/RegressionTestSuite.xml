@@ -8,8 +8,8 @@
             </run>
         </groups>
         <classes>
-            <!-- <class name="com.javaseleniumdemo.tests.login.LoginTests"/> -->
-            <class name="com.javaseleniumdemo.tests.login.ExceptionsTests"/>
+            <class name="com.javaseleniumdemo.tests.login.LoginTests"/>
+            <class name="com.javaseleniumdemo.tests.exceptions.ExceptionsTests"/>
         </classes>
     </test>
 </suite>
