@@ -15,7 +15,7 @@ public class LoginPage extends BasePage {
     private final String loginPageUrl = baseUrl + "practice-test-login/";
 
     public LoginPage(WebDriver driver) {
-        super(driver);
+        super(driver); 
     }
 
     public void goTo() {
