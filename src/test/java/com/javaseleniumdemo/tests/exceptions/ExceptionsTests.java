@@ -12,7 +12,7 @@ public class ExceptionsTests extends BaseTest {
 
     @Test(groups = {"regression", "smoke"})
     public void testAddButtonCreatesNewRow() {
-        ExceptionsPage exceptionsPage = new ExceptionsPage(this.driver);
+        ExceptionsPage exceptionsPage = new ExceptionsPage(driver);
         logger.info("Step 1: Go to page");
         exceptionsPage.goTo();
         logger.info("Step 2: Get number of rows");
@@ -28,7 +28,7 @@ public class ExceptionsTests extends BaseTest {
     @Test(groups = {"regression", "smoke"})
     public void testNewTextInputIsSaved() {
         String testInputText = "test input";
-        ExceptionsPage exceptionsPage = new ExceptionsPage(this.driver);
+        ExceptionsPage exceptionsPage = new ExceptionsPage(driver);
         logger.info("Step 1: Go to page");
         exceptionsPage.goTo();
         int initialRowQty = exceptionsPage.getRowQty();

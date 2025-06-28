@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     }
 
     public void goTo() {
-        this.driver.get(loginPageUrl);
+        driver.get(loginPageUrl);
     }
 
     public String getLoginPageUrl() {
@@ -27,32 +27,32 @@ public class LoginPage extends BasePage {
     }
 
     public void fillUsernameField(String text) {
-        WebElement usernameField = WebDriverUtils.waitForVisibilityAndFind(this.driver, this.usernameField);
+        WebElement usernameField = WebDriverUtils.waitForVisibilityAndFind(driver, this.usernameField);
         usernameField.sendKeys(text);
     }
 
     public void fillPasswordField(String text) {
-        WebElement passwordField = WebDriverUtils.waitForVisibilityAndFind(this.driver, this.passwordField);
+        WebElement passwordField = WebDriverUtils.waitForVisibilityAndFind(driver, this.passwordField);
         passwordField.sendKeys(text);
     }
 
     public void clickSubmitButton() {
-        WebElement submitButton = WebDriverUtils.waitForVisibilityAndFind(this.driver, this.submitButton);
+        WebElement submitButton = WebDriverUtils.waitForVisibilityAndFind(driver, this.submitButton);
         submitButton.click();
     }
 
     public boolean isLogoutButtonVisible() {
-        WebElement logOutButton = WebDriverUtils.waitForVisibilityAndFind(this.driver, this.logoutButton);
+        WebElement logOutButton = WebDriverUtils.waitForVisibilityAndFind(driver, this.logoutButton);
         return logOutButton.isDisplayed();
     }
 
     public String getLoginErrorMessage() {
-        WebElement errorMessage = WebDriverUtils.waitForVisibilityAndFind(this.driver, this.errorMessage);
+        WebElement errorMessage = WebDriverUtils.waitForVisibilityAndFind(driver, this.errorMessage);
         return errorMessage.getText();
     }
 
     public String getLoggedInMessage() {
-        WebElement loggedInMessage = WebDriverUtils.waitForVisibilityAndFind(this.driver, this.loggedInMessage);
+        WebElement loggedInMessage = WebDriverUtils.waitForVisibilityAndFind(driver, this.loggedInMessage);
         return loggedInMessage.getText();
     }
 }
