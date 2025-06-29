@@ -17,7 +17,6 @@ public class PostsApiTests {
 
     @BeforeClass
     public void setup() {
-        RestAssured.reset();
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
     }
 
