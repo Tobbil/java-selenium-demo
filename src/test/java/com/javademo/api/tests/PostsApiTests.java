@@ -12,9 +12,6 @@ import static org.hamcrest.Matchers.*;
 
 public class PostsApiTests {
 
-    private static final Logger logger = LoggerFactory.getLogger(PostsApiTests.class);
-
-
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
