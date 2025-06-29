@@ -1,9 +1,9 @@
-package com.javaseleniumdemo.tests.exceptions;
+package com.javademo.ui.tests.exceptions;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.javaseleniumdemo.pages.ExceptionsPage;
-import com.javaseleniumdemo.tests.BaseTest;
+import com.javademo.ui.pages.ExceptionsPage;
+import com.javademo.ui.tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

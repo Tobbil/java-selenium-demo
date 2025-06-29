@@ -1,6 +1,6 @@
-package com.javaseleniumdemo.pages;
+package com.javademo.ui.pages;
 
-import com.javaseleniumdemo.utils.WebDriverUtils;
+import com.javademo.ui.utils.WebDriverUtils;
 import org.openqa.selenium.WebDriver;
 
 public class BasePage {

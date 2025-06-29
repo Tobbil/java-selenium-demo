@@ -1,4 +1,4 @@
-package com.javaseleniumdemo.dataproviders;
+package com.javademo.ui.dataproviders;
 
 import org.testng.annotations.DataProvider;
 

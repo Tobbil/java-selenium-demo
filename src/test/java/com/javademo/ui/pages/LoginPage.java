@@ -1,9 +1,9 @@
-package com.javaseleniumdemo.pages;
+package com.javademo.ui.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import com.javaseleniumdemo.utils.WebDriverUtils;
+import com.javademo.ui.utils.WebDriverUtils;
 
 public class LoginPage extends BasePage {
     private final By usernameField = By.id("username");

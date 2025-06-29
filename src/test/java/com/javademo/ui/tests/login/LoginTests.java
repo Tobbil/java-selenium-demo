@@ -1,8 +1,8 @@
-package com.javaseleniumdemo.tests.login;
+package com.javademo.ui.tests.login;
 
-import com.javaseleniumdemo.dataproviders.TestDataProviders;
-import com.javaseleniumdemo.pages.LoginPage;
-import com.javaseleniumdemo.tests.BaseTest;
+import com.javademo.ui.dataproviders.TestDataProviders;
+import com.javademo.ui.pages.LoginPage;
+import com.javademo.ui.tests.BaseTest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
